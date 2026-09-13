@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        Define la codificación de caracteres del documento.
+        UTF-8 permite utilizar correctamente caracteres como:
+        á, é, í, ó, ú, ñ, ¿, ¡, entre muchos otros.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Configura cómo se muestra la página en diferentes dispositivos.
+
+        width=device-width:
+        Indica que el ancho de la página debe ajustarse al ancho
+        de la pantalla del dispositivo.
+
+        initial-scale=1.0:
+        Establece el nivel de zoom inicial en 100%.
+
+        Esta configuración es importante para que la página
+        se visualice correctamente en dispositivos móviles.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Tienda de camisetas</title>
+</head>
+<style>
+    .producto {
+        border: 1px solid gray;
+        padding: 10px;
+    }
+
+</style>
+<body>
+    <!--
+        HTML proporciona seis niveles de encabezados, desde <h1> hasta <h6>.
+
+        <h1> representa el encabezado de mayor importancia.
+        <h6> representa el encabezado de menor importancia.
+
+        Los encabezados no solamente cambian el tamaño visual del texto;
+        también permiten definir la estructura jerárquica del contenido
+        de una página.
+        
+        La etiqueta <div> se utiliza como un contenedor genérico
+        para agrupar otros elementos HTML.
+    -->
+<div style="background-color: black; color: white; padding: 10px;">
+    <h1>Tienda de ropa</h1>
+    <h2>Programa tu estilo</h2>
+    </div>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    
+    <p><em>¡Ven y aprovecha lo mejor de nuestros productos!</em></p>
+    <p></p>
+    <p></p>
+    <div class="camisas">
+        <img class="camisa_imagen"
+            src="Arte.jpg"
+            alt="camiseta"
+            width="230"
+            height="224"
+    >
+        <p class="camisa_descripcion">Camiseta para mujer "Arte de programar"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+
+    <div class="camisas">
+    <img
+        src="Falso.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p class="camisa_descripcion">Camiseta unisex "boolean"</p>
+        <p class="camisa_precio"></p>
+        <p><a href="#">Comprar</a></p>
+  
+    </div>
+
+    <div class="camisas">
+    <img
+        src="github.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p class="camisa_descripcion">Camiseta unisex "GitHub"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+    <div class="camisas">
+    <img
+        src="Hola mundo.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p>Camiseta unisex "Hello word"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+    <div class="camisas">
+     <img
+        src="if.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p>Camiseta unisex "Condicion if"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+
+     <div class="camisas">
+     <img
+        src="HTML 5.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p>Camiseta unisex "HTML 5"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+     <div class="camisas">
+     <img
+        src="Error_404.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p>Camiseta unisex "Error 404"</p>
+        <p class="camisa_precio">Precio: $250</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+     <div class="camisas">
+     <img
+        src="python.jpg"
+        alt="camiseta"
+        width="230"
+        height="224"
+    >
+        <p>Camiseta unisex "python"</p>
+        <p class="camisa_precio">Precio: $240</p>
+        <p><a href="#">Comprar</a></p>
+    </div>
+    <div class="camisas">
+    <img
+       src="Sudo rm .jpg"
+       alt="camiseta"
+       width="230"
+       height="224"
+   >
+      <p>Camiseta unisex "Sudo rm"</p>
+      <p class="camisa_precio">Precio: $250</p>
+      <p><a href="#">Comprar</a></p>
+    </div>
+    <div class="camisas">
+    <img
+       src="Linux.jpg"
+       alt="camiseta"
+       width="230"
+       height="224"
+   >
+      <p>Camiseta unisex "Linux"</p>
+      <p class="camisa_precio">Precio: $250</p>
+      <p><a href="#">Comprar</a></p>
+    </div>
+<script>
+    function getValores() {
+      // Obtener la opción seleccionada (radio)
+      const opcion = document.querySelector('input[name="opcion"]:checked');
+      const valorOpcion = opcion ? opcion.value : "Ninguna seleccionada";
+
+      // Obtener el resto de los valores
+      const numero = document.querySelector('input[type="number"]').value;
+      const fecha = document.querySelector('input[type="date"]').value;
+      const password = document.querySelector('input[type="password"]').value;
+      const email = document.querySelector('input[type="email"]').value;
+
+      // Construir mensaje
+      let mensaje = "📋 Valores del pedido:\n\n";
+      mensaje += "Talla elegida: " + valorOpcion + "\n";
+      mensaje += "Cantidad: " + (numero || "No ingresada") + "\n";
+      mensaje += "Fecha: " + (fecha || "No ingresada") + "\n";
+      mensaje += "Contraseña: " + (password ? "********" : "No ingresada") + "\n";
+      mensaje += "Email: " + (email || "No ingresado");
+
+      // Mostrar en alerta
+      alert(mensaje);
+    }
+  </script>
+
+
+  <h1>Realiza tu pedido</h1>
+  <p>Selecciona la medida de tu camisa</p>
+
+<form action="javascript:getValores();">
+
+        <input type="radio" id="chica" name="opcion" value="Chica">
+        <label for="chica">Chica</label><br>
+
+        <input type="radio" id="mediana" name="opcion" value="Mediana">
+        <label for="mediana">Mediana</label><br>
+
+        <input type="radio" id="grande" name="opcion" value="Grande">
+        <label for="grande">Grande</label><br><br>
+
+        <label for="cantidad">Cantidad</label><br>
+        <input type="number" id="cantidad" name="cajas" placeholder="1,2,3,4"><br><br>
+
+        <label for="fecha-entrega">Fecha de entrega</label><br>
+        <input type="date" id="fecha-entrega" name="fecha"><br><br>
+
+        <label for="clave">Contraseña</label><br>
+        <input type="password" id="clave" name="clave" placeholder="password"><br><br>
+
+        <label for="user-email">Correo electrónico</label><br>
+        <input type="email" id="user-email" name="correo" placeholder="p.e. jquiroz@izt.uam.mx" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</html>
