@@ -25,11 +25,20 @@
 
     <!-- Título que aparece en la pestaña del navegador -->
     <title>Tienda de camisetas</title>
+    <!--Icono de camiseta en la pestania del navegador-->
+    <link rel="icon" type="png" href="https://static.vecteezy.com/system/resources/thumbnails/044/761/979/small/elegant-black-crew-neck-t-shirt-free-png.png">
 </head>
 <style>
     .producto {
         border: 1px solid gray;
         padding: 10px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
     }
 
 </style>
@@ -198,9 +207,37 @@
       alert(mensaje);
     }
   </script>
+  
+    <!--Guia de tallas para los compradores-->
+    <h2>Guia de tallas</h2>
 
+    <table border="1">
+        <tr>
+            <th>Talla</th>
+            <th>Pecho</th>
+            <th>Largo</th>
+            </tr>
 
-  <h1>Realiza tu pedido</h1>
+        <tr>
+            <td>Chica</td>
+            <td>46 cm</td>
+            <td>65 cm</td>
+        </tr>
+
+        <tr>
+            <td>Mediana</td>
+            <td>50 cm</td>
+            <td>68 cm</td>
+        </tr>
+
+        <tr>
+            <td>Grande</td>
+            <td>54 cm</td>
+            <td>71 cm</td>
+        </tr>
+    </table>
+
+  <h2>Realiza tu pedido</h2>
   <p>Selecciona la medida de tu camisa</p>
 
 <form action="javascript:getValores();">
@@ -229,5 +266,10 @@
         <input type="submit" value="Enviar">
     </form>
 
+    <!--Pie de pagina-->
+    <footer>
+    <p>© 2026 Tienda de ropa</p>
+    <p>Todos los derechos reservados</p>
+    </footer>
 
 </html>
